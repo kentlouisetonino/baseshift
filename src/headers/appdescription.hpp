@@ -10,6 +10,5 @@ void appDescription() {
   cout << "\t| \033[1;34m Developed By:\033[1:0m \033[1;32mKent Louise Tonino\033[1;0m\t\t\t  |\n";
   cout << "\t|\t\t\t\t\t\t\t  |\n";
   cout << "\t-----------------------------------------------------------\n";
-
 }
 
