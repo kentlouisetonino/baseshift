@@ -8,6 +8,9 @@
 
 
 ### Development
+> - Project board and tasks.
+[Project Board](https://github.com/users/kentlouisetonino/projects/13)
+
 > - Build and run the app.
 ```bash
 # Change permission for the build script.
