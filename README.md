@@ -8,8 +8,7 @@
 
 
 ### Development
-> - Project board and tasks.
-[Project Board](https://github.com/users/kentlouisetonino/projects/13)
+> - Project [board](https://github.com/users/kentlouisetonino/projects/13) and tasks.
 
 > - Build and run the app.
 ```bash
