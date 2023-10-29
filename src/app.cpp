@@ -1,7 +1,10 @@
 #include<iostream>
+#include "./headers/clearscreen.hpp"
+#include "./headers/appdescription.hpp"
 
 int main() {
-  std::cout << "Hello World";
+  clearScreen();
+  appDescription();
 
   return 0;
 }
