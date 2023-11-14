@@ -7,13 +7,13 @@ import (
 )
 
 func AppDescription() {
-  fmt.Println("\033[34m", "--------------------------------------", "\033[0m");
+  fmt.Println(helper.ColorBlue, "--------------------------------------", helper.ColorReset);
   helper.NewLine();
-  fmt.Println("\033[32m", "       Welcome to BaseShift           ", "\033[0m");
-  fmt.Println("\033[97m" ,"                                      ", "\033[0m");
-  fmt.Println("\033[97m", "  A CLI program that allows you to    ", "\033[0m");
-  fmt.Println("\033[97m", "  convert a number system to another  ", "\033[0m");
+  fmt.Println(helper.ColorGreen, "       Welcome to BaseShift           ", helper.ColorReset);
+  fmt.Println(helper.ColorWhite ,"                                      ", helper.ColorReset);
+  fmt.Println(helper.ColorWhite, "  A CLI program that allows you to    ", helper.ColorReset);
+  fmt.Println(helper.ColorWhite, "  convert a number system to another  ", helper.ColorReset);
   helper.NewLine();
-  fmt.Println("\033[34m", "--------------------------------------", "\033[0m");
+  fmt.Println(helper.ColorBlue, "--------------------------------------", helper.ColorReset);
 }
 
