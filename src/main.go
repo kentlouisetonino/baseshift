@@ -7,7 +7,7 @@ import (
 
 func main() {
   // Clear up the screen first.
-  helper.ClearScreen()
+  helper.Clear()
 
   // Display the app description.
   display.AppDescription();
