@@ -1,4 +1,4 @@
 #!/bin/bash
 
-g++ -o app ./src/app.cpp
+go build -o app ./src/main.go
 
