@@ -1,8 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"github.com/kentlouisetonino/baseshift/src/libs/display"
+	"github.com/kentlouisetonino/baseshift/src/libs/helper"
+)
 
 func main() {
-  fmt.Println("Hello World");
+  // Clear up the screen first.
+	helper.ClearScreen()
+
+  // Display the app description.
+  display.AppDescription();
 }
 
