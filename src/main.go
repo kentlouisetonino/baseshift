@@ -1,15 +1,15 @@
 package main
 
 import (
-	"github.com/kentlouisetonino/baseshift/src/libs/display"
-	"github.com/kentlouisetonino/baseshift/src/libs/helper"
+	"github.com/kentlouisetonino/baseshift/src/libs/displays"
+	"github.com/kentlouisetonino/baseshift/src/libs/helpers"
 )
 
 func main() {
   // Clear up the screen first.
-  helper.Clear()
+  helpers.Clear()
 
   // Display the app description.
-  display.AppDescription();
+  displays.AppDescription();
 }
 

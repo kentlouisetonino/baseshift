@@ -1,4 +1,4 @@
-package helper
+package helpers
 
 // Based on the ANSI color codes.
 var ColorReset = "\033[0m"

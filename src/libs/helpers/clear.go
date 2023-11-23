@@ -1,4 +1,4 @@
-package helper
+package helpers
 
 import (
 	"os"
@@ -10,3 +10,4 @@ func Clear() {
   c.Stdout = os.Stdout
   c.Run()
 }
+
