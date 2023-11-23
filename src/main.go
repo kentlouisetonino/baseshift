@@ -11,5 +11,9 @@ func main() {
 
   // Display the app description.
   displays.AppDescription();
+  helpers.NewLine();
+
+  // Display the options.
+  displays.AppOptions();
 }
 
