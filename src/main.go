@@ -1,8 +1,11 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/kentlouisetonino/baseshift/src/libs/displays"
 	"github.com/kentlouisetonino/baseshift/src/libs/helpers"
+	"github.com/kentlouisetonino/baseshift/src/libs/inputs"
 )
 
 func main() {
@@ -15,5 +18,9 @@ func main() {
 
   // Display the options.
   displays.AppOptions();
+  helpers.AddNewLine();
+
+  // Ask input.
+  fmt.Println(inputs.OptionInput())
 }
 
