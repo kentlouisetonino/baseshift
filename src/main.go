@@ -11,11 +11,12 @@ import (
 )
 
 func main() {
+  // Variable declations with initialization.
+  validOptions := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
   isValidOption := false
   hasError := false
   
   for {
-    validOptions := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
     // Clear up the screen first.
     helpers.Clear()
 
