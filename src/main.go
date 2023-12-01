@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"slices"
 
 	"github.com/kentlouisetonino/baseshift/src/libs/displays"
 	"github.com/kentlouisetonino/baseshift/src/libs/helpers"
@@ -9,6 +10,8 @@ import (
 )
 
 func main() {
+  validOptions := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+  isValidOption := false
   // Clear up the screen first.
   helpers.Clear()
 
@@ -21,6 +24,11 @@ func main() {
   helpers.AddNewLine();
 
   // Ask input.
-  fmt.Println(inputs.OptionInput())
+  userInput := inputs.OptionInput()
+  isValidOption = slices.Contains(validOptions, userInput)
+
+  fmt.Println(validOptions)
+  fmt.Println(userInput)
+  fmt.Println(isValidOption)
 }
 
