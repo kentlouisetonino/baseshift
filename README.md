@@ -1,5 +1,5 @@
 ### Description
-> - A CLI applicaltion that handles number system conversion
+> - A simple CLI applicaltion that handles number system conversion
     to another system.
 
 <br />
