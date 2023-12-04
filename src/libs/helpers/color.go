@@ -6,3 +6,5 @@ var ColorBlue = "\033[34m"
 var ColorGreen = "\033[32m"
 var ColorWhite = "\033[97m"
 var ColorRed = "\033[31m"
+var ColorYellow = "\033[33m"
+

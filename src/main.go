@@ -13,8 +13,9 @@ import (
 func main() {
   // Variable declations with initialization.
   validOptions := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
-  isValidOption := false
+  isValidMainOption := false
   hasError := false
+  optionInput := 0
   
   for {
     // Clear up the screen first.
@@ -35,13 +36,27 @@ func main() {
     helpers.AddNewLine();
 
     // Ask input.
-    userInput := inputs.OptionInput()
-    isValidOption = slices.Contains(validOptions, userInput)
+    userInput := inputs.MainOptionInput()
+    isValidMainOption = slices.Contains(validOptions, userInput)
     
-    if isValidOption {
-      helpers.AddNewLine()
+    if isValidMainOption {
+      helpers.Clear()
       hasError = false;
-      fmt.Println(helpers.TwoSpace, "Thank you.")
+      
+      if (userInput == 1) {
+        // Display option 1 description.
+        displays.Option1Description()
+        helpers.AddNewLine()
+
+        // Display option 1 instruction.
+        displays.Option1Instruction()
+        helpers.AddNewLine()
+
+        // Ask binary input.
+        optionInput = inputs.Option1Input()
+        fmt.Println(helpers.TwoSpace, "Decimal :", optionInput)
+      }
+
       break
     } else {
       hasError = true;

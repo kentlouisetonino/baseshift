@@ -6,7 +6,7 @@ import (
 	"github.com/kentlouisetonino/baseshift/src/libs/helpers"
 )
 
-func OptionInput() int {
+func MainOptionInput() int {
   // Declare the variables.
   var option int;
 
