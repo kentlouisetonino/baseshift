@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"slices"
 
+	"github.com/kentlouisetonino/baseshift/src/libs/computations"
 	"github.com/kentlouisetonino/baseshift/src/libs/displays"
 	"github.com/kentlouisetonino/baseshift/src/libs/errors"
 	"github.com/kentlouisetonino/baseshift/src/libs/helpers"
@@ -54,7 +55,7 @@ func main() {
 
         // Ask binary input.
         optionInput = inputs.Option1Input()
-        fmt.Println(helpers.TwoSpace, "Decimal :", optionInput)
+        fmt.Println(helpers.TwoSpace, "Decimal :", computations.BinaryToDecimal(optionInput))
       }
 
       break
