@@ -45,17 +45,46 @@ func main() {
       hasError = false;
       
       if (userInput == 1) {
-        // Display option 1 description.
-        displays.Option1Description()
-        helpers.AddNewLine()
+        // This will handle the loop if option1 input is invalid.
+        option1HasError := false
+        
+        for {
+          // Clear first the terminal.
+          helpers.Clear()
 
-        // Display option 1 instruction.
-        displays.Option1Instruction()
-        helpers.AddNewLine()
+          // Display option 1 description.
+          displays.Option1Description()
+          helpers.AddNewLine()
 
-        // Ask binary input.
-        optionInput = inputs.Option1Input()
-        fmt.Println(helpers.TwoSpace, "Decimal :", computations.BinaryToDecimal(optionInput))
+          // Display error message.
+          if (option1HasError) {
+            errors.InvalidOption();
+            helpers.AddNewLine()
+          }
+
+          // Display option 1 instruction.
+          displays.Option1Instruction()
+          helpers.AddNewLine()
+
+          // Ask binary input.
+          optionInput = inputs.Option1Input()
+            
+          if (optionInput == -1) {
+            // Signal the app that there is an error.
+            option1HasError = true
+
+            continue
+          } else {
+            fmt.Println(helpers.TwoSpace, "Decimal :", computations.BinaryToDecimal(optionInput))
+            
+            // Reset the state
+            option1HasError = false
+            optionInput = 0
+
+            break
+          }
+
+        }
       }
 
       break
