@@ -77,7 +77,7 @@ func main() {
           } else {
             fmt.Println(helpers.TwoSpace, "Decimal :", computations.BinaryToDecimal(optionInput))
             
-            // Reset the state
+            // Reset the state.
             option1HasError = false
             optionInput = 0
 
