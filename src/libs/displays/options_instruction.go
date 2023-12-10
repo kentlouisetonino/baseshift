@@ -7,5 +7,5 @@ import (
 )
 
 func Option1Instruction() {
-  fmt.Println(helpers.OneSpace, helpers.ColorYellow, "Please input a valid binary numbers.", helpers.ColorReset)
+	fmt.Println(helpers.OneSpace, helpers.ColorYellow, "Please input a valid binary numbers.", helpers.ColorReset)
 }

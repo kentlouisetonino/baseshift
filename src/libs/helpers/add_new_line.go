@@ -3,6 +3,5 @@ package helpers
 import "fmt"
 
 func AddNewLine() {
-  fmt.Printf(NewLine);
+	fmt.Printf(NewLine)
 }
-

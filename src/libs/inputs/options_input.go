@@ -10,45 +10,45 @@ import (
 )
 
 func Option1Input() int64 {
-  
-  // Declare the variables.
-  invalidNumbers := []int64{2, 3, 4, 5, 6, 7, 8 ,9}
-  var option int64;
-  var optionChecker string;
 
-  // Ask the option.
-  fmt.Print(helpers.ThreeSpace, "Binary  : ")
-  
-  // Check if the string is a valid number.
-  fmt.Scan(&optionChecker)
-  parseOption, err := strconv.ParseInt(optionChecker, 10, 64)
-  
-  // If invalid numbers.
-  if (err != nil) {
-    return -1
-  }
+	// Declare the variables.
+	invalidNumbers := []int64{2, 3, 4, 5, 6, 7, 8, 9}
+	var option int64
+	var optionChecker string
 
-  // Assign the input the option variable.
-  option = parseOption
+	// Ask the option.
+	fmt.Print(helpers.ThreeSpace, "Binary  : ")
 
-  // Check if the input is a valid binary digit.
-  isValid := true
-  numberArray := computations.NumberArray(option)
+	// Check if the string is a valid number.
+	fmt.Scan(&optionChecker)
+	parseOption, err := strconv.ParseInt(optionChecker, 10, 64)
 
-  for i := 0; i < len(numberArray); i++ {
-    isInvalid := slices.Contains(invalidNumbers, numberArray[i])
+	// If invalid numbers.
+	if err != nil {
+		return -1
+	}
 
-    if (isInvalid) {
-      isValid = false
-      break
-    }
+	// Assign the input the option variable.
+	option = parseOption
 
-    continue
-  }
+	// Check if the input is a valid binary digit.
+	isValid := true
+	numberArray := computations.NumberArray(option)
 
-  if (isValid == false) {
-    return -1
-  }
+	for i := 0; i < len(numberArray); i++ {
+		isInvalid := slices.Contains(invalidNumbers, numberArray[i])
 
-  return option;
+		if isInvalid {
+			isValid = false
+			break
+		}
+
+		continue
+	}
+
+	if isValid == false {
+		return -1
+	}
+
+	return option
 }

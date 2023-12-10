@@ -8,10 +8,9 @@ import (
 )
 
 func Option1Description() {
-  fmt.Println(helpers.OneSpace, helper.ColorBlue, "--------------------------------------", helpers.ColorReset);
-  helper.AddNewLine();
-  fmt.Println(helpers.OneSpace, helper.ColorGreen, "       [1] Binary to Decimal          ", helpers.ColorReset);
-  helper.AddNewLine();
-  fmt.Println(helpers.OneSpace, helper.ColorBlue, "--------------------------------------", helpers.ColorReset);
+	fmt.Println(helpers.OneSpace, helper.ColorBlue, "--------------------------------------", helpers.ColorReset)
+	helper.AddNewLine()
+	fmt.Println(helpers.OneSpace, helper.ColorGreen, "       [1] Binary to Decimal          ", helpers.ColorReset)
+	helper.AddNewLine()
+	fmt.Println(helpers.OneSpace, helper.ColorBlue, "--------------------------------------", helpers.ColorReset)
 }
-

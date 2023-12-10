@@ -7,6 +7,5 @@ import (
 )
 
 func InvalidOption() {
-  fmt.Println(helpers.OneSpace, helpers.ColorRed, "Invalid option. Please try again.", helpers.ColorReset)
+	fmt.Println(helpers.OneSpace, helpers.ColorRed, "Invalid option. Please try again.", helpers.ColorReset)
 }
-
