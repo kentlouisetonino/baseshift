@@ -48,8 +48,9 @@ func main() {
         option1Menu := 0
         option1Input := int64(0)
         option1HasError := false
+        backToMainMenu := false
         
-        for {
+        for backToMainMenu == false {
           // Clear first the terminal.
           helpers.Clear()
 
@@ -85,14 +86,14 @@ func main() {
             if (option1Menu == 1) {
               option1HasError = false
               continue
+            } else if (option1Menu == 2) {
+              backToMainMenu = true
+            } else {
+              break
             }
-
-            break;
           }
         }
       }
-
-      break
     } else {
       hasError = true;
     }
