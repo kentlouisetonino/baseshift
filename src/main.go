@@ -16,7 +16,6 @@ func main() {
   validOptions := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
   isValidMainOption := false
   hasError := false
-  optionInput := 0
   
   for {
     // Clear up the screen first.
@@ -47,6 +46,7 @@ func main() {
       if (userInput == 1) {
         // This will handle the loop if option1 input is invalid.
         option1Menu := 0
+        option1Input := int64(0)
         option1HasError := false
         
         for {
@@ -64,16 +64,17 @@ func main() {
           }
 
           // Ask binary input.
-          optionInput = inputs.Option1Input()
+          option1Input = inputs.Option1Input()
             
-          if (optionInput == -1) {
+          if (option1Input == -1) {
+            fmt.Println(option1Input)
             // Signal the app that there is an error.
             option1HasError = true
 
             continue
           } else {
             // Display the output of computation ffor option 1.
-            fmt.Println(helpers.TwoSpace, "Decimal :", computations.BinaryToDecimal(optionInput))
+            fmt.Println(helpers.TwoSpace, "Decimal :", computations.BinaryToDecimal(option1Input))
             helpers.AddNewLine()
 
             // Ask user if want to try again, go back, or quit.
@@ -81,13 +82,12 @@ func main() {
             fmt.Print(helpers.TwoSpace, helpers.ColorGreen, " [1-Retry, 2-Back] : ", helpers.ColorReset)
             fmt.Scan(&option1Menu)
             
-            switch option1Menu {
-              case 1:
-                option1HasError = false
-              default:
-                break
+            if (option1Menu == 1) {
+              option1HasError = false
+              continue
             }
 
+            break;
           }
         }
       }
