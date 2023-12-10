@@ -17,7 +17,7 @@ func Option1Input() int64 {
   var optionChecker string;
 
   // Ask the option.
-  fmt.Print(helpers.ThreeSpace, "Binary : ")
+  fmt.Print(helpers.ThreeSpace, "Binary  : ")
   
   // Check if the string is a valid number.
   fmt.Scan(&optionChecker)
