@@ -46,6 +46,7 @@ func main() {
       
       if (userInput == 1) {
         // This will handle the loop if option1 input is invalid.
+        option1Menu := 0
         option1HasError := false
         
         for {
@@ -62,10 +63,6 @@ func main() {
             helpers.AddNewLine()
           }
 
-          // Display option 1 instruction.
-          displays.Option1Instruction()
-          helpers.AddNewLine()
-
           // Ask binary input.
           optionInput = inputs.Option1Input()
             
@@ -75,15 +72,23 @@ func main() {
 
             continue
           } else {
+            // Display the output of computation ffor option 1.
             fmt.Println(helpers.TwoSpace, "Decimal :", computations.BinaryToDecimal(optionInput))
+            helpers.AddNewLine()
+
+            // Ask user if want to try again, go back, or quit.
+            // Any other key except 1 and 2 will be treated as quit.
+            fmt.Print(helpers.TwoSpace, helpers.ColorGreen, " [1-Retry, 2-Back] : ", helpers.ColorReset)
+            fmt.Scan(&option1Menu)
             
-            // Reset the state.
-            option1HasError = false
-            optionInput = 0
+            switch option1Menu {
+              case 1:
+                option1HasError = false
+              default:
+                break
+            }
 
-            break
           }
-
         }
       }
 
