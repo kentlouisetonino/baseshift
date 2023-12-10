@@ -42,7 +42,8 @@ func main() {
     if (userInput == 13) {
       break
     }
-
+    
+    // Check if the option is valid.
     isValidMainOption = slices.Contains(validOptions, userInput)
     
     if isValidMainOption {
