@@ -13,7 +13,7 @@ import (
 
 func main() {
   // Variable declations with initialization.
-  validOptions := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}
+  validOptions := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13}
   isValidMainOption := false
   hasError := false
   
@@ -37,6 +37,12 @@ func main() {
 
     // Ask input.
     userInput := inputs.MainOptionInput()
+    
+    // Exit the application.
+    if (userInput == 13) {
+      break
+    }
+
     isValidMainOption = slices.Contains(validOptions, userInput)
     
     if isValidMainOption {
