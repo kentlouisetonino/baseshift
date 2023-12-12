@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"slices"
 
-	"github.com/kentlouisetonino/baseshift/src/libs/computations"
-	"github.com/kentlouisetonino/baseshift/src/libs/displays"
-	"github.com/kentlouisetonino/baseshift/src/libs/errors"
-	"github.com/kentlouisetonino/baseshift/src/libs/helpers"
-	"github.com/kentlouisetonino/baseshift/src/libs/inputs"
+	"github.com/kentlouisetonino/baseshift/src/computations"
+	"github.com/kentlouisetonino/baseshift/src/displays"
+	"github.com/kentlouisetonino/baseshift/src/errors"
+	"github.com/kentlouisetonino/baseshift/src/helpers"
+	"github.com/kentlouisetonino/baseshift/src/inputs"
 )
 
 func main() {

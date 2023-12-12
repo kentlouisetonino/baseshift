@@ -4,15 +4,14 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/kentlouisetonino/baseshift/src/libs/helpers"
-	helper "github.com/kentlouisetonino/baseshift/src/libs/helpers"
+	"github.com/kentlouisetonino/baseshift/src/helpers"
 )
 
-var openBracket = helper.ColorBlue + "[" + helper.ColorReset
-var closeBracket = helper.ColorBlue + "]" + helper.ColorReset
+var openBracket = helpers.ColorBlue + "[" + helpers.ColorReset
+var closeBracket = helpers.ColorBlue + "]" + helpers.ColorReset
 
 func optionNumber(number int) string {
-	return helper.ColorGreen + strconv.Itoa(number) + helper.ColorReset
+	return helpers.ColorGreen + strconv.Itoa(number) + helpers.ColorReset
 }
 
 func AppOptions() {

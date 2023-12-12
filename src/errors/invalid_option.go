@@ -3,7 +3,7 @@ package errors
 import (
 	"fmt"
 
-	"github.com/kentlouisetonino/baseshift/src/libs/helpers"
+	"github.com/kentlouisetonino/baseshift/src/helpers"
 )
 
 func InvalidOption() {

@@ -3,7 +3,7 @@ package displays
 import (
 	"fmt"
 
-	"github.com/kentlouisetonino/baseshift/src/libs/helpers"
+	"github.com/kentlouisetonino/baseshift/src/helpers"
 )
 
 func Option1Instruction() {

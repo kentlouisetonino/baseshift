@@ -5,8 +5,8 @@ import (
 	"slices"
 	"strconv"
 
-	"github.com/kentlouisetonino/baseshift/src/libs/computations"
-	"github.com/kentlouisetonino/baseshift/src/libs/helpers"
+	"github.com/kentlouisetonino/baseshift/src/computations"
+	"github.com/kentlouisetonino/baseshift/src/helpers"
 )
 
 func Option1Input() int64 {
