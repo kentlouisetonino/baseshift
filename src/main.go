@@ -20,9 +20,10 @@ func main() {
 	for {
 		// Clear up the screen first.
 		helpers.Clear()
+    helpers.AddNewLine()
 
 		// Display the app description.
-		displays.AppDescription()
+    displays.AppDescription()
 		helpers.AddNewLine()
 
 		// Display error message.
@@ -52,7 +53,7 @@ func main() {
 
 			if userInput == 1 {
 				// This will handle the loop if option1 input is invalid.
-				option1Menu := 0
+				option1Menu := "0"
 				option1Input := int64(0)
 				option1HasError := false
 				backToMainMenu := false
@@ -89,15 +90,18 @@ func main() {
 						// Any other key except 1 and 2 will be treated as quit.
 						fmt.Print(helpers.TwoSpace, helpers.ColorGreen, " [1-Retry, 2-Back] : ", helpers.ColorReset)
 						fmt.Scan(&option1Menu)
+            
+            fmt.Println(option1Input)
 
-						if option1Menu == 1 {
+            if option1Menu == "1" {
 							option1HasError = false
 							continue
-						} else if option1Menu == 2 {
+						} else if option1Menu == "2" {
 							backToMainMenu = true
 						} else {
-							break
-						}
+              option1HasError = true;
+              break;
+            }
 					}
 				}
 			}
