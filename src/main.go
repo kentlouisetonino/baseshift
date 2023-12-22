@@ -91,16 +91,13 @@ func main() {
 						fmt.Print(helpers.TwoSpace, helpers.ColorGreen, " [1-Retry, 2-Back] : ", helpers.ColorReset)
 						fmt.Scan(&option1Menu)
             
-            fmt.Println(option1Input)
-
             if option1Menu == "1" {
 							option1HasError = false
 							continue
 						} else if option1Menu == "2" {
 							backToMainMenu = true
 						} else {
-              option1HasError = true;
-              break;
+              helpers.Exit()
             }
 					}
 				}
