@@ -51,7 +51,8 @@ func main() {
 			hasError = false
 
 			if userInput == 1 {
-        services.BinaryToDecimal()
+				// Handle the convertion from binary to decimal.
+				services.BinaryToDecimal()
 			}
 		} else {
 			hasError = true
