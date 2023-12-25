@@ -13,3 +13,11 @@ func Option1Description() {
 	helpers.AddNewLine()
 	fmt.Println(helpers.OneSpace, helpers.ColorBlue, "--------------------------------------", helpers.ColorReset)
 }
+
+func Option2Description() {
+	fmt.Println(helpers.OneSpace, helpers.ColorBlue, "--------------------------------------", helpers.ColorReset)
+	helpers.AddNewLine()
+	fmt.Println(helpers.OneSpace, helpers.ColorGreen, "       [2] Binary to Octal          ", helpers.ColorReset)
+	helpers.AddNewLine()
+	fmt.Println(helpers.OneSpace, helpers.ColorBlue, "--------------------------------------", helpers.ColorReset)
+}

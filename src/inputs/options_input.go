@@ -9,7 +9,7 @@ import (
 	"github.com/kentlouisetonino/baseshift/src/helpers"
 )
 
-func Option1Input() int64 {
+func BinaryInput() int64 {
 
 	// Declare the variables.
 	invalidNumbers := []int64{2, 3, 4, 5, 6, 7, 8, 9}
