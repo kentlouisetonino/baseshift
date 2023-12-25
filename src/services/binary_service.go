@@ -93,7 +93,7 @@ func BinaryToOctal() {
 			continue
 		} else {
 			// Display the output of computation for option 2.
-			fmt.Println(helpers.TwoSpace, "Octal", helpers.OneSpace, ":", computations.BinaryToDecimal(optionInput))
+			fmt.Println(helpers.TwoSpace, "Octal", helpers.OneSpace, ":", computations.BinaryToOctal(optionInput))
 			helpers.AddNewLine()
 
 			// Ask user if want to try again, go back, or quit.

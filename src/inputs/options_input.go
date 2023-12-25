@@ -33,7 +33,7 @@ func BinaryInput() int64 {
 
 	// Check if the input is a valid binary digit.
 	isValid := true
-	numberArray := computations.NumberArray(option)
+	numberArray := computations.ReversedBinaryArray(option)
 
 	for i := 0; i < len(numberArray); i++ {
 		isInvalid := slices.Contains(invalidNumbers, numberArray[i])

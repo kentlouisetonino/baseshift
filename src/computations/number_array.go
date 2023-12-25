@@ -1,12 +1,13 @@
 package computations
 
-func NumberArray(num int64) []int64 {
-	var arrayOfNum []int64
+// Reversed the binary and return an array of binary.
+func ReversedBinaryArray(binary int64) []int64 {
+	var arrayOfBinary []int64
 
-	for num != 0 {
-		arrayOfNum = append(arrayOfNum, num%10)
-		num /= 10
+	for binary != 0 {
+		arrayOfBinary = append(arrayOfBinary, binary%10)
+		binary /= 10
 	}
 
-	return arrayOfNum
+	return arrayOfBinary
 }
