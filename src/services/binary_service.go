@@ -12,9 +12,9 @@ import (
 
 func BinaryToDecimal() {
 	// This will handle the loop if option1 input is invalid.
-	option1Menu := "0"
-	option1Input := int64(0)
-	option1HasError := false
+	optionMenu := "0"
+	optionInput := int64(0)
+	optionHasError := false
 	backToMainMenu := false
 
 	for backToMainMenu == false {
@@ -26,34 +26,33 @@ func BinaryToDecimal() {
 		helpers.AddNewLine()
 
 		// Display error message.
-		if option1HasError {
+		if optionHasError {
 			errors.InvalidOption()
 			helpers.AddNewLine()
 		}
 
 		// Ask binary input.
-		option1Input = inputs.BinaryInput()
+		optionInput = inputs.BinaryInput()
 
-		if option1Input == -1 {
-			fmt.Println(option1Input)
+		if optionInput == -1 {
 			// Signal the app that there is an error.
-			option1HasError = true
+			optionHasError = true
 
 			continue
 		} else {
 			// Display the output of computation ffor option 1.
-			fmt.Println(helpers.TwoSpace, "Decimal :", computations.BinaryToDecimal(option1Input))
+			fmt.Println(helpers.TwoSpace, "Decimal :", computations.BinaryToDecimal(optionInput))
 			helpers.AddNewLine()
 
 			// Ask user if want to try again, go back, or quit.
 			// Any other key except 1 and 2 will be treated as quit.
 			fmt.Print(helpers.TwoSpace, helpers.ColorGreen, " [1-Retry, 2-Back] : ", helpers.ColorReset)
-			fmt.Scan(&option1Menu)
+			fmt.Scan(&optionMenu)
 
-			if option1Menu == "1" {
-				option1HasError = false
+			if optionMenu == "1" {
+				optionHasError = false
 				continue
-			} else if option1Menu == "2" {
+			} else if optionMenu == "2" {
 				backToMainMenu = true
 			} else {
 				helpers.Exit()
@@ -64,9 +63,9 @@ func BinaryToDecimal() {
 
 func BinaryToOctal() {
 	// This will handle the loop if option1 input is invalid.
-	option1Menu := "0"
-	option1Input := int64(0)
-	option1HasError := false
+	optionMenu := "0"
+	optionInput := int64(0)
+	optionHasError := false
 	backToMainMenu := false
 
 	for backToMainMenu == false {
@@ -78,34 +77,34 @@ func BinaryToOctal() {
 		helpers.AddNewLine()
 
 		// Display error message.
-		if option1HasError {
+		if optionHasError {
 			errors.InvalidOption()
 			helpers.AddNewLine()
 		}
 
 		// Ask binary input.
-		option1Input = inputs.BinaryInput()
+		optionInput = inputs.BinaryInput()
 
-		if option1Input == -1 {
-			fmt.Println(option1Input)
+		if optionInput == -1 {
+			fmt.Println(optionInput)
 			// Signal the app that there is an error.
-			option1HasError = true
+			optionHasError = true
 
 			continue
 		} else {
 			// Display the output of computation ffor option 1.
-			fmt.Println(helpers.TwoSpace, "Octal", helpers.OneSpace, ":", computations.BinaryToDecimal(option1Input))
+			fmt.Println(helpers.TwoSpace, "Octal", helpers.OneSpace, ":", computations.BinaryToDecimal(optionInput))
 			helpers.AddNewLine()
 
 			// Ask user if want to try again, go back, or quit.
 			// Any other key except 1 and 2 will be treated as quit.
 			fmt.Print(helpers.TwoSpace, helpers.ColorGreen, " [1-Retry, 2-Back] : ", helpers.ColorReset)
-			fmt.Scan(&option1Menu)
+			fmt.Scan(&optionMenu)
 
-			if option1Menu == "1" {
-				option1HasError = false
+			if optionMenu == "1" {
+				optionHasError = false
 				continue
-			} else if option1Menu == "2" {
+			} else if optionMenu == "2" {
 				backToMainMenu = true
 			} else {
 				helpers.Exit()
