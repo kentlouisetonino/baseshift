@@ -40,7 +40,7 @@ func BinaryToDecimal() {
 
 			continue
 		} else {
-			// Display the output of computation ffor option 1.
+			// Display the output of computation for option 1.
 			fmt.Println(helpers.TwoSpace, "Decimal :", computations.BinaryToDecimal(optionInput))
 			helpers.AddNewLine()
 
@@ -72,7 +72,7 @@ func BinaryToOctal() {
 		// Clear first the terminal.
 		helpers.Clear()
 
-		// Display option 1 description.
+		// Display option 2 description.
 		displays.Option2Description()
 		helpers.AddNewLine()
 
@@ -92,7 +92,7 @@ func BinaryToOctal() {
 
 			continue
 		} else {
-			// Display the output of computation ffor option 1.
+			// Display the output of computation for option 2.
 			fmt.Println(helpers.TwoSpace, "Octal", helpers.OneSpace, ":", computations.BinaryToDecimal(optionInput))
 			helpers.AddNewLine()
 
