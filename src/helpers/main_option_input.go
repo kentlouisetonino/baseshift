@@ -1,9 +1,7 @@
-package inputs
+package helpers
 
 import (
 	"fmt"
-
-	"github.com/kentlouisetonino/baseshift/src/helpers"
 )
 
 func MainOptionInput() int {
@@ -11,7 +9,7 @@ func MainOptionInput() int {
 	var option int
 
 	// Ask the option.
-	fmt.Print(helpers.ThreeSpace, "Please choose an option: ")
+	fmt.Print(ThreeSpace, "Please choose an option: ")
 
 	// Assign the input the option variable.
 	fmt.Scan(&option)

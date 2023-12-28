@@ -6,7 +6,6 @@ import (
 	"github.com/kentlouisetonino/baseshift/src/displays"
 	"github.com/kentlouisetonino/baseshift/src/errors"
 	"github.com/kentlouisetonino/baseshift/src/helpers"
-	"github.com/kentlouisetonino/baseshift/src/inputs"
 	"github.com/kentlouisetonino/baseshift/src/services"
 )
 
@@ -36,7 +35,7 @@ func main() {
 		helpers.AddNewLine()
 
 		// Ask input.
-		userInput := inputs.MainOptionInput()
+		userInput := helpers.MainOptionInput()
 
 		// Exit the application.
 		if userInput == 13 {
