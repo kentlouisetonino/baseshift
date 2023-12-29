@@ -244,3 +244,55 @@ func BinaryToOctal() {
 		}
 	}
 }
+
+func BinaryToHexadecimal() {
+	// This will handle the loop if option1 input is invalid.
+	optionMenu := "0"
+	optionInput := int64(0)
+	optionHasError := false
+	backToMainMenu := false
+
+	for backToMainMenu == false {
+		// Clear first the terminal.
+		helpers.Clear()
+
+		// Display option 2 description.
+		displays.Option3Description()
+		helpers.AddNewLine()
+
+		// Display error message.
+		if optionHasError {
+			errors.InvalidOption()
+			helpers.AddNewLine()
+		}
+
+		// Ask binary input.
+		optionInput = getBinaryInput()
+
+		if optionInput == -1 {
+			fmt.Println(optionInput)
+			// Signal the app that there is an error.
+			optionHasError = true
+
+			continue
+		} else {
+			// Display the output of computation for option 2.
+			fmt.Println(helpers.TwoSpace, "Hexadecimal", helpers.OneSpace, ":", getOctalValue(optionInput))
+			helpers.AddNewLine()
+
+			// Ask user if want to try again, go back, or quit.
+			// Any other key except 1 and 2 will be treated as quit.
+			fmt.Print(helpers.TwoSpace, helpers.ColorGreen, " [1-Retry, 2-Back] : ", helpers.ColorReset)
+			fmt.Scan(&optionMenu)
+
+			if optionMenu == "1" {
+				optionHasError = false
+				continue
+			} else if optionMenu == "2" {
+				backToMainMenu = true
+			} else {
+				helpers.Exit()
+			}
+		}
+	}
+}

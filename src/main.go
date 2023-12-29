@@ -58,6 +58,11 @@ func main() {
 			if userInput == 2 {
 				services.BinaryToOctal()
 			}
+
+			// Handle the conversion from binary to hexadecimal.
+			if userInput == 3 {
+				services.BinaryToHexadecimal()
+			}
 		} else {
 			hasError = true
 		}
