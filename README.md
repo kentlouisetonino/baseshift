@@ -1,4 +1,4 @@
-### Description
+## Description
 > - A CLI application that handles number system conversion to another system.
 
 <br />
@@ -8,7 +8,9 @@
 <br />
 <br />
 
-### Local Development
+
+
+## Local Development
 > - Push all changes to remote repositories.
 ```bash
 # Change permission for the git script.
