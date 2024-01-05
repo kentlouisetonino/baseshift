@@ -3,7 +3,7 @@
 
 > - This will support binary, decimal, octal, and hexadecimal systems.
 
-> - Thee tools and technologies include `Go`, `Bash`, `Snapcraft`, and `Linux`.
+> - Thee tools and technologies include Go, Bash, Snapcraft, and Linux.
 
 <br />
 
