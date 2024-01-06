@@ -36,6 +36,11 @@ chmod +x build
 ./app
 ```
 
+<br />
+<br />
+
+
+
 ## Installation
 ```bash
 # Install the app using snap.
