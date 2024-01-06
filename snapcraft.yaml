@@ -9,9 +9,9 @@ base: core20
 confinement: strict
 apps:
   baseshift:
-    command: app
+    command: bin/baseshift
 parts:
   baseshift:
-    plugin: go
+    plugin: dump
     source-type: git
-    source: https://github.com/kentlouisetonino/baseshift
+    source: https://github.com/kentlouisetonino/baseshift.git
