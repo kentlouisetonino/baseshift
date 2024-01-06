@@ -38,7 +38,7 @@ func main() {
 		userInput := helpers.MainOptionInput()
 
 		// Exit the application.
-		if userInput == 13 {
+		if userInput == 4 {
 			break
 		}
 
