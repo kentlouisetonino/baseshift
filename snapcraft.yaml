@@ -12,6 +12,6 @@ apps:
     command: bin/baseshift
 parts:
   baseshift:
-    plugin: dump
+    plugin: go
     source-type: git
     source: https://github.com/kentlouisetonino/baseshift.git
