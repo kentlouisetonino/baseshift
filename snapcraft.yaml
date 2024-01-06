@@ -1,0 +1,17 @@
+name: baseshift
+summary: A CLI application for converting number systems.
+description: |
+  A CLI application converting numbers Systems. This will support
+  binary, decimal, octal, and hexadecimal systems.
+version: "1.0"
+grade: stable
+base: core20
+confinement: strict
+apps:
+  baseshift:
+    command: app
+parts:
+  baseshift:
+    plugin: go
+    source-type: git
+    source: https://github.com/kentlouisetonino/baseshift
