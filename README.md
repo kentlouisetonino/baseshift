@@ -17,6 +17,8 @@
 
 
 ## Local Development
+> - Note: `The root main.go is a symbolic link`.
+
 > - Push all changes to remote repositories.
 ```bash
 # Change permission for the git script.

@@ -53,6 +53,7 @@ func BinaryToDecimal() {
 			} else if optionMenu == "2" {
 				backToMainMenu = true
 			} else {
+				helpers.Clear()
 				helpers.Exit()
 			}
 		}
@@ -105,6 +106,7 @@ func BinaryToOctal() {
 			} else if optionMenu == "2" {
 				backToMainMenu = true
 			} else {
+				helpers.Clear()
 				helpers.Exit()
 			}
 		}
@@ -157,6 +159,7 @@ func BinaryToHexadecimal() {
 			} else if optionMenu == "2" {
 				backToMainMenu = true
 			} else {
+				helpers.Clear()
 				helpers.Exit()
 			}
 		}

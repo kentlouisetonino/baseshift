@@ -67,4 +67,7 @@ func main() {
 			hasError = true
 		}
 	}
+
+	// Clear the terminal upon exit.
+	helpers.Clear()
 }
