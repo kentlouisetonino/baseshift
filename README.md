@@ -19,15 +19,6 @@
 ## Local Development
 > - Note: `The root main.go is a symbolic link`.
 
-> - Push all changes to remote repositories.
-```bash
-# Change permission for the git script.
-chmod +x git-push-all
-
-# Push all the change in remote repositories.
-./git-push-all
-```
-
 > - Build and run the app.
 
 ```bash
