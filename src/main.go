@@ -38,7 +38,7 @@ func main() {
 		userInput := helpers.MainOptionInput()
 
 		// Exit the application.
-		if userInput == 4 {
+		if userInput == 5 {
 			break
 		}
 
@@ -46,7 +46,7 @@ func main() {
 		isValidMainOption = slices.Contains(validOptions, userInput)
 
 		if isValidMainOption {
-			helpers.Clear()
+			// helpers.Clear()
 			hasError = false
 
 			// Handle the conversion from binary to decimal.
@@ -62,6 +62,10 @@ func main() {
 			// Handle the conversion from binary to hexadecimal.
 			if userInput == 3 {
 				services.BinaryToHexadecimal()
+			}
+
+			if userInput == 4 {
+				services.DecimalToBinary()
 			}
 		} else {
 			hasError = true
