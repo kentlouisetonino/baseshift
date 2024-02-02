@@ -45,4 +45,3 @@ sudo snap remove baseshift
 # Running the app.
 baseshift
 ```
-
