@@ -1,5 +1,5 @@
 name: baseshift
-summary: A CLI application for converting number systems.
+summary: BaseShift
 description: |
   A CLI application converting numbers Systems. This will support
   binary, decimal, octal, and hexadecimal systems.
