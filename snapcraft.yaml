@@ -3,7 +3,7 @@ summary: A CLI application for converting number systems.
 description: |
   A CLI application converting numbers Systems. This will support
   binary, decimal, octal, and hexadecimal systems.
-version: "1.1"
+version: "1.2"
 grade: stable
 base: core20
 confinement: strict
