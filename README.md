@@ -3,7 +3,7 @@
 
 > - This will support binary, decimal, octal, and hexadecimal systems.
 
-> - Thee tools and technologies include Go, Bash, Snapcraft, and Linux.
+> - The tools and technologies include Go, Bash, Snapcraft, and Linux.
 
 > - Snap: https://snapcraft.io/baseshift
 
@@ -36,7 +36,10 @@ chmod +x build
 
 ## Installation
 ```bash
-# Install the app using snap.
+# If app is already installed.
+sudo snap refresh baseshift
+
+# If app is not yet installed.
 sudo snap install baseshift
 
 # Remove the app using snap.
