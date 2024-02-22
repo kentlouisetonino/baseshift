@@ -8,11 +8,9 @@ import (
 func getDecimalToOctal(decimal int64) int64 {
 	octalStringArray := []string{}
 
-	// Divide the dividend until it reaches zero.
+	// Divide the dividend with 8 until it reaches zero.
 	for i := decimal; i != 0; i = i / 8 {
 		// Append the reminder.
-		// If no reminder add 0 in the beginning of array.
-		// If contains a reminder add 1 in the beginning of array.
 		octalStringArray = append([]string{strconv.Itoa(int(i - 8*(i/8)))}, octalStringArray...)
 	}
 
