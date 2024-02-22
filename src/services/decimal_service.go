@@ -89,7 +89,7 @@ func DecimalToOctal() {
 
 			continue
 		} else {
-			fmt.Println(helpers.TwoSpace, "Octal", helpers.FiveSpace, ":", getDecimalToOctal(optionInput))
+			fmt.Println(helpers.TwoSpace, "Octal", helpers.SixSpace, ":", getDecimalToOctal(optionInput))
 			helpers.AddNewLine()
 
 			// Ask user if want to try again, go back, or quit.
