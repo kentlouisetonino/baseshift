@@ -49,17 +49,14 @@ func main() {
 			// helpers.Clear()
 			hasError = false
 
-			// Handle the conversion from binary to decimal.
 			if userInput == 1 {
 				services.BinaryToDecimal()
 			}
 
-			// Handle the conversion from binary to octal.
 			if userInput == 2 {
 				services.BinaryToOctal()
 			}
 
-			// Handle the conversion from binary to hexadecimal.
 			if userInput == 3 {
 				services.BinaryToHexadecimal()
 			}
