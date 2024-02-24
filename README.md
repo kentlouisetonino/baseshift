@@ -1,5 +1,5 @@
-## Description
-
+### DESCRIPTION
+##
 ![Screenshot from 2024-02-22 23-04-27](https://github.com/kentlouisetonino/baseshift/assets/69438999/f6d3161e-b494-42c9-a70a-b95738e179a9)
 
 
@@ -18,7 +18,8 @@
 
 
 
-## Local Development
+### DEVELOPMENT
+##
 > - Note: `The root main.go is a symbolic link`.
 
 > - Build and run the app.
@@ -36,7 +37,8 @@ chmod +x build
 
 
 
-## Installation
+### INSTALLATION
+##
 ```bash
 # If app is already installed.
 sudo snap refresh baseshift
