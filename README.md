@@ -1,6 +1,7 @@
 ### DESCRIPTION
 ##
-![Screenshot from 2024-02-22 23-04-27](https://github.com/kentlouisetonino/baseshift/assets/69438999/f6d3161e-b494-42c9-a70a-b95738e179a9)
+![Screenshot from 2024-02-28 20-15-25](https://github.com/kentlouisetonino/baseshift/assets/69438999/7c5b79a9-de15-4456-9dcf-5c421ebc17ad)
+
 
 
 <br />
@@ -8,8 +9,6 @@
 > - A CLI application for converting number systems.
 
 > - This will support binary, decimal, octal, and hexadecimal systems.
-
-> - The tools and technologies include Go, Bash, Snapcraft, and Linux.
 
 > - Snap: https://snapcraft.io/baseshift
 
