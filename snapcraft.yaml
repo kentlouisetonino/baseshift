@@ -3,7 +3,7 @@ summary: BaseShift
 description: |
   A CLI application converting numbers Systems. This will support
   binary, decimal, octal, and hexadecimal systems.
-version: "1.3.0"
+version: "1.4.0"
 grade: stable
 base: core20
 confinement: strict
