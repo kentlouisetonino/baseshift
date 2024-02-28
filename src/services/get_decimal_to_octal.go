@@ -15,15 +15,15 @@ func getDecimalToOctal(decimal int64) int64 {
 	}
 
 	// Combine all the array of string of number.
-	joinedBinaryStringArray := strings.Join(octalStringArray, "")
+	joinedOctalStringArray := strings.Join(octalStringArray, "")
 
 	// Convert the combines string of number into a number.
-	parsedBinary, err := strconv.ParseInt(joinedBinaryStringArray, 10, 64)
+	parsedOctal, err := strconv.ParseInt(joinedOctalStringArray, 10, 64)
 
 	// If invalid numbers.
 	if err != nil {
 		return -1
 	}
 
-	return parsedBinary
+	return parsedOctal
 }
