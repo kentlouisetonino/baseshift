@@ -9,17 +9,13 @@ import (
 )
 
 func BinaryToDecimal() {
-	// This will handle the loop if option1 input is invalid.
 	optionMenu := "0"
 	optionInput := int64(0)
 	optionHasError := false
 	backToMainMenu := false
 
 	for backToMainMenu == false {
-		// Clear first the terminal.
 		helpers.Clear()
-
-		// Display option 1 description.
 		displays.Option1Description()
 		helpers.AddNewLine()
 
@@ -61,17 +57,13 @@ func BinaryToDecimal() {
 }
 
 func BinaryToOctal() {
-	// This will handle the loop if option1 input is invalid.
 	optionMenu := "0"
 	optionInput := int64(0)
 	optionHasError := false
 	backToMainMenu := false
 
 	for backToMainMenu == false {
-		// Clear first the terminal.
 		helpers.Clear()
-
-		// Display option 2 description.
 		displays.Option2Description()
 		helpers.AddNewLine()
 
@@ -114,17 +106,13 @@ func BinaryToOctal() {
 }
 
 func BinaryToHexadecimal() {
-	// This will handle the loop if option1 input is invalid.
 	optionMenu := "0"
 	optionInput := int64(0)
 	optionHasError := false
 	backToMainMenu := false
 
 	for backToMainMenu == false {
-		// Clear first the terminal.
 		helpers.Clear()
-
-		// Display option 2 description.
 		displays.Option3Description()
 		helpers.AddNewLine()
 

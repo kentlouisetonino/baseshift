@@ -9,17 +9,13 @@ import (
 )
 
 func DecimalToBinary() {
-	// This will handle the loop if option1 input is invalid.
 	optionMenu := "0"
 	optionInput := int64(0)
 	optionHasError := false
 	backToMainMenu := false
 
 	for backToMainMenu == false {
-		// Clear first the terminal.
 		helpers.Clear()
-
-		// Display option 1 description.
 		displays.Option4Description()
 		helpers.AddNewLine()
 
@@ -67,10 +63,7 @@ func DecimalToOctal() {
 	backToMainMenu := false
 
 	for backToMainMenu == false {
-		// Clear first the terminal.
 		helpers.Clear()
-
-		// Display option 1 description.
 		displays.Option5Description()
 		helpers.AddNewLine()
 
@@ -111,17 +104,13 @@ func DecimalToOctal() {
 }
 
 func DecimalToHexadecimal() {
-	// This will handle the loop if option1 input is invalid.
 	optionMenu := "0"
 	optionInput := int64(0)
 	optionHasError := false
 	backToMainMenu := false
 
 	for backToMainMenu == false {
-		// Clear first the terminal.
 		helpers.Clear()
-
-		// Display option 1 description.
 		displays.Option6Description()
 		helpers.AddNewLine()
 
