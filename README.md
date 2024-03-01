@@ -12,7 +12,7 @@
 
 > - Snap: https://snapcraft.io/baseshift
 
-> - Live Coding: https://www.youtube.com/playlist?list=PLPks-uiro_XLkNPKPjwAcL6ifiqpIIPgu
+> - Videos: https://www.youtube.com/playlist?list=PLPks-uiro_XLkNPKPjwAcL6ifiqpIIPgu
 
 <br />
 <br />
