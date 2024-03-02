@@ -12,8 +12,6 @@
 
 > - Snap : https://snapcraft.io/baseshift
 
-> - Videos : https://www.youtube.com/playlist?list=PLPks-uiro_XLkNPKPjwAcL6ifiqpIIPgu
-
 <br />
 <br />
 
