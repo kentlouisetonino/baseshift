@@ -10,7 +10,7 @@
 
 > - This will support binary, decimal, octal, and hexadecimal systems.
 
-> - Snap: https://snapcraft.io/baseshift
+> - Snap : https://snapcraft.io/baseshift
 
 <br />
 <br />
