@@ -38,7 +38,7 @@ func main() {
 		userInput := helpers.MainOptionInput()
 
 		// Exit the application.
-		if userInput == 7 {
+		if userInput == 8 {
 			break
 		}
 
@@ -72,6 +72,11 @@ func main() {
 			if userInput == 6 {
 				services.DecimalToHexadecimal()
 			}
+
+			if userInput == 7 {
+				services.OctalToBinary()
+			}
+
 		} else {
 			hasError = true
 		}
