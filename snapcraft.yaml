@@ -1,9 +1,9 @@
 name: baseshift
-summary: BaseShift
+summary: CLI Tool
 description: |
-  A CLI application converting numbers Systems. This will support
-  binary, decimal, octal, and hexadecimal systems.
-version: "1.4.0"
+  A CLI tool that converts number system. This will support
+  binary, decimal, octal, and hexadecimal system.
+version: "1.5.0"
 grade: stable
 base: core20
 confinement: strict
