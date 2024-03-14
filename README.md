@@ -3,13 +3,6 @@
 
 ![baseshift](https://github.com/kentlouisetonino/baseshift/assets/69438999/0c4cbaf7-cbb1-4f3a-ba1b-d4799c69fd17)
 
-
-<br />
-
-![image](https://github.com/kentlouisetonino/baseshift/assets/69438999/40c2c6ee-8d6e-45aa-9a3c-6c21dd00871d)
-
-
-
 <br />
 
 > - A CLI tool for converting number systems.
