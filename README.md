@@ -16,7 +16,7 @@
 
 
 
-### DEVELOPMENT
+### LOCAL DEVELOPMENT
 ##
 > - Note: `The root main.go is a symbolic link`.
 
@@ -26,8 +26,9 @@
 # Change permission for the build script.
 chmod +x build
 
-# Run the app.
+# Run the app either of the options below.
 ./app
+go run main.go
 ```
 
 <br />
