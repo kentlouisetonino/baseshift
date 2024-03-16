@@ -63,7 +63,7 @@ func OctalToDecimal() {
 
 	for backToMainMenu == false {
 		helpers.Clear()
-		displays.Option7Description()
+		displays.Option8Description()
 		helpers.AddNewLine()
 
 		// Display error message.
@@ -81,7 +81,7 @@ func OctalToDecimal() {
 
 			continue
 		} else {
-			fmt.Println(helpers.TwoSpace, "Binary", helpers.ThreeSpace, ":", getOctalToBinary(optionInput))
+			fmt.Println(helpers.TwoSpace, "Decimal", helpers.TwoSpace, ":", getOctalToDecimal(optionInput))
 			helpers.AddNewLine()
 
 			// Ask user if want to try again, go back, or quit.
