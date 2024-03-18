@@ -12,7 +12,7 @@ func getOctalInput() int64 {
 	var optionChecker string
 
 	// Ask the octal input from the end user.
-	fmt.Print(helpers.ThreeSpace, "Octal", helpers.ThreeSpace, helpers.ThreeSpace, ": ")
+	fmt.Print(helpers.ThreeSpace, "Octal", helpers.ThreeSpace, helpers.FourSpace, ": ")
 
 	// Handle the input.
 	fmt.Scan(&optionChecker)
