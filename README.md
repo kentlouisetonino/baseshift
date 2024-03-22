@@ -24,11 +24,10 @@
 
 ```bash
 # Change permission for the build script.
-chmod +x build
+sudo chmod +x run.sh
 
-# Run the app either of the options below.
-./app
-go run main.go
+# Run the app.
+./run
 ```
 
 <br />
