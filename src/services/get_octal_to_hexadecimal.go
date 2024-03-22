@@ -5,6 +5,25 @@ import (
 )
 
 func getOctalToHexadecimal(octal int64) string {
+	octalToHexadecimal := map[string]string{
+		"0000": "0",
+		"0001": "1",
+		"0010": "2",
+		"0011": "3",
+		"0100": "4",
+		"0101": "5",
+		"0110": "6",
+		"0111": "7",
+		"1000": "8",
+		"1001": "9",
+		"1010": "A",
+		"1011": "B",
+		"1100": "C",
+		"1101": "D",
+		"1110": "E",
+		"1111": "F",
+	}
+
 	// Get the equivalent of octal in binary.
 	binaryStringValue := getOctalToBinary(octal)
 
@@ -18,77 +37,54 @@ func getOctalToHexadecimal(octal int64) string {
 	// Convert the int64 value to int64 array and then reverse.
 	binaryArray := getNumberArray(parsedBinary)
 
-	// Check if the length of the binary array is divisible by 4.
-	isDivisibleByFour := (len(binaryArray) % 4) == 0
+	// Get the length of the array.
+	arrayLength := len(binaryArray)
 
-	groupHexadecimal := ""
-	finalHexadecimal := ""
+	// Create a new binary array.
+	newBinaryArray := []int64{}
 
-	if isDivisibleByFour {
-		for i := 0; i < len(binaryArray)+1; i++ {
-			if len(groupHexadecimal) == 4 {
-				switch groupHexadecimal {
-				case "0000":
-					finalHexadecimal = finalHexadecimal + "0"
-					groupHexadecimal = ""
-				case "0001":
-					finalHexadecimal = finalHexadecimal + "1"
-					groupHexadecimal = ""
-				case "0010":
-					finalHexadecimal = finalHexadecimal + "2"
-					groupHexadecimal = ""
-				case "0011":
-					finalHexadecimal = finalHexadecimal + "3"
-					groupHexadecimal = ""
-				case "0100":
-					finalHexadecimal = finalHexadecimal + "4"
-					groupHexadecimal = ""
-				case "0101":
-					finalHexadecimal = finalHexadecimal + "5"
-					groupHexadecimal = ""
-				case "0110":
-					finalHexadecimal = finalHexadecimal + "6"
-					groupHexadecimal = ""
-				case "0111":
-					finalHexadecimal = finalHexadecimal + "7"
-					groupHexadecimal = ""
-				case "1000":
-					finalHexadecimal = finalHexadecimal + "8"
-					groupHexadecimal = ""
-				case "1001":
-					finalHexadecimal = finalHexadecimal + "9"
-					groupHexadecimal = ""
-				case "1010":
-					finalHexadecimal = finalHexadecimal + "A"
-					groupHexadecimal = ""
-				case "1011":
-					finalHexadecimal = finalHexadecimal + "B"
-					groupHexadecimal = ""
-				case "1100":
-					finalHexadecimal = finalHexadecimal + "C"
-					groupHexadecimal = ""
-				case "1101":
-					finalHexadecimal = finalHexadecimal + "D"
-					groupHexadecimal = ""
-				case "1110":
-					finalHexadecimal = finalHexadecimal + "E"
-					groupHexadecimal = ""
-				case "1111":
-					finalHexadecimal = finalHexadecimal + "F"
-					groupHexadecimal = ""
-				}
+	// If array lacks 3 digits to become divisible by 4.
+	if (arrayLength % 4) == 1 {
+		newBinaryArray = append([]int64{0, 0, 0}, binaryArray...)
+	}
 
-			} else {
-				if i != 8 {
-					if binaryArray[i] == 0 {
-						groupHexadecimal = groupHexadecimal + "0"
-					} else {
-						groupHexadecimal = groupHexadecimal + "1"
-					}
-				}
-			}
+	// If array lacks 2 digits to become divisible by 4.
+	if (arrayLength % 4) == 2 {
+		newBinaryArray = append([]int64{0, 0}, binaryArray...)
+	}
+
+	// If array lacks 1 digit to become divisible by 4.
+	if (arrayLength % 4) == 3 {
+		newBinaryArray = append([]int64{0}, binaryArray...)
+	}
+
+	// If array is divisible by 4.
+	if (arrayLength % 4) == 0 {
+		newBinaryArray = binaryArray
+	}
+
+	// Group the array to 4 elements.
+	groupBinaryArray := []string{}
+
+	// Value to push inside the groups array.
+	group := ""
+
+	for i := 0; i < len(newBinaryArray); i++ {
+		if len(group) == 3 {
+			groupBinaryArray = append(groupBinaryArray, group+strconv.FormatInt(newBinaryArray[i], 10))
+			group = ""
+		} else {
+			group = group + strconv.FormatInt(newBinaryArray[i], 10)
 		}
 	}
 
-	return finalHexadecimal
+	// Final value to return.
+	hexadecimal := ""
+
+	// Handle the equivalent of the group in the octalToHexadecimal map.
+	for i := 0; i < len(groupBinaryArray); i++ {
+		hexadecimal = hexadecimal + octalToHexadecimal[groupBinaryArray[i]]
+	}
+
+	return hexadecimal
 }
